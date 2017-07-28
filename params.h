@@ -1,0 +1,11 @@
+#define nx 16
+#define ny 16
+#define nz 16
+#define nv 3
+#define prefix "data."
+#define suffix ".dbl"
+#define datdir "/Users/pabu/Codes/PLUTO/Sims/"
+#define outprefix "velk."
+#define f1 9
+#define f2 10
+#define verbose 1
