@@ -14,6 +14,8 @@ void main()
   double ****velr; //4d data array to store velocity components in r-space
   double ****velk; //4d data array to store velocity components in k-space
   int i,j,k;
+  
+
   fftw_plan p;
   fftw_complex *out;
   out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*nx*ny*(nz/2+1));
@@ -39,8 +41,13 @@ void main()
 	write_velk(dir,velk,out);
      }
      if(verbose) printarray4d(nv,nx,ny,nz/2+1,velk);
-// create energy spectrum
+// create wavenumber arrays
+   kx = linspace();
+   ky = linspace();
+   kz = linspace();
 
+// create energy spectrum
+   
 // write data to output
 // 0: dbl
 // 1: vtk
