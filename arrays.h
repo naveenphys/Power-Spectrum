@@ -173,3 +173,8 @@ char ****array4d(int n0, int n1, int n2, int n3, size_t dsize)
    }
    return v; 
 }
+
+void fft_shift(int n0, int n1, int n2, int n3)
+{
+
+}
